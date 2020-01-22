@@ -100,5 +100,17 @@ public class Dice {
 
     }
 
+    public void set_Probability(int[] arry_prop) throws Exception{
+
+        this.probability = new int[arry_prop.length];
+        for(int a = 0;a < arry_prop.length ;a++){
+            this.probability[a] = arry_prop[a];
+        }
+    error_handling();
+    update();
+
+
+    }
+
 
 }
